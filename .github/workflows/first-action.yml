@@ -1,0 +1,11 @@
+name: First workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    # Used the machine or runner where the job will be runned
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting continue-on-error
+        run: echo "Hello World"
+      - name: Print goodbye
+        run: echo "done - bye"
